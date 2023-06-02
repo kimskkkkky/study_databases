@@ -204,7 +204,7 @@
           {
             "name": "CARS_OPTION_ID",
             "comment": "옵션ID",
-            "dataType": "",
+            "dataType": "VARCHAR",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -219,7 +219,7 @@
               "pfk": false,
               "widthName": 115.41357421875,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
             "id": "ccd7ddd9-5d16-4804-bf23-5dd4a9b968a5"
@@ -229,7 +229,7 @@
           "active": false,
           "left": 666,
           "top": 347,
-          "zIndex": 143,
+          "zIndex": 148,
           "widthName": 95.18359375,
           "widthComment": 60,
           "color": "#0097FF"
