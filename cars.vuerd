@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
+    "scrollTop": -5,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
@@ -200,13 +200,36 @@
               "widthDefault": 60
             },
             "id": "1edbc791-9577-45e7-b6a5-9494dcea3eac"
+          },
+          {
+            "name": "CARS_OPTION_ID",
+            "comment": "옵션ID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 115.41357421875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ccd7ddd9-5d16-4804-bf23-5dd4a9b968a5"
           }
         ],
         "ui": {
           "active": false,
           "left": 666,
-          "top": 346,
-          "zIndex": 121,
+          "top": 347,
+          "zIndex": 143,
           "widthName": 95.18359375,
           "widthComment": 60,
           "color": "#0097FF"
@@ -254,7 +277,7 @@
             "1edbc791-9577-45e7-b6a5-9494dcea3eac"
           ],
           "x": 666,
-          "y": 401,
+          "y": 412.25,
           "direction": "left"
         },
         "constraintName": "fk_cars_to_cars_option",
