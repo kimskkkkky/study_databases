@@ -216,7 +216,7 @@
       },
       {
         "name": "NEW_ID",
-        "comment": "NEW ID 생성",
+        "comment": "NEW ID 생성(ID+ID)",
         "columns": [
           {
             "name": "CARS_ID",
@@ -267,11 +267,11 @@
         ],
         "ui": {
           "active": false,
-          "left": 191,
+          "left": 188,
           "top": 715,
-          "zIndex": 324,
+          "zIndex": 334,
           "widthName": 60,
-          "widthComment": 78.552734375,
+          "widthComment": 120,
           "color": "#FFEB3B"
         },
         "visible": true,
@@ -442,7 +442,7 @@
           "columnIds": [
             "32435a75-4124-4e3e-81e4-c463394ae967"
           ],
-          "x": 395.1220703125,
+          "x": 392.1220703125,
           "y": 715,
           "direction": "top"
         },
@@ -468,7 +468,7 @@
           "columnIds": [
             "6b835b16-d466-4051-81af-687e6eb7ac7a"
           ],
-          "x": 599.244140625,
+          "x": 596.244140625,
           "y": 770,
           "direction": "right"
         },
