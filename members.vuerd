@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -4,
-    "scrollLeft": -5,
+    "scrollTop": -1,
+    "scrollLeft": -2,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -189,7 +189,7 @@
           "active": false,
           "left": 80,
           "top": 91,
-          "zIndex": 245,
+          "zIndex": 261,
           "widthName": 67.72998046875,
           "widthComment": 60
         },
@@ -245,25 +245,147 @@
               "widthDefault": 60
             },
             "id": "644b9ea7-65b9-45fc-9358-9ec28a86cb0a"
+          },
+          {
+            "name": "MEMBERS_HOBBY_ID",
+            "comment": "회원_취미 ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 140.70263671875,
+              "widthComment": 77.841796875,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "3f43d15f-2bb6-4545-a293-8f02b4519fe4"
           }
         ],
         "ui": {
           "active": false,
-          "left": 100,
-          "top": 522,
-          "zIndex": 237,
+          "left": 385,
+          "top": 364,
+          "zIndex": 333,
           "widthName": 120.47265625,
           "widthComment": 61.22998046875,
           "color": "#007BFF"
         },
         "visible": true,
         "id": "11cc19b9-3813-4e93-aeb1-e43ae451a9eb"
+      },
+      {
+        "name": "MEMBEWRS_LOGIN",
+        "comment": "회원_로그인",
+        "columns": [
+          {
+            "name": "EMAIL",
+            "comment": "이메일",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "04d98009-5c88-4424-996e-c196bbb71237"
+          },
+          {
+            "name": "UNIQUE_ID",
+            "comment": "유니크 ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72.7890625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "7a4de3ac-7c40-4b89-9bbb-4ef8186a8d1e"
+          },
+          {
+            "name": "MEMBEWRS_LOGIN_ID",
+            "comment": "회원_로그인 ID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 147.91357421875,
+              "widthComment": 90.841796875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e0d6a2b1-e919-44a3-a8ed-41aedc5c1663"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 657,
+          "top": 122,
+          "zIndex": 304,
+          "widthName": 127.68359375,
+          "widthComment": 74.22998046875,
+          "color": "#97FF00"
+        },
+        "visible": true,
+        "id": "b2f6c453-3294-4e03-b19d-44a282085ef9"
       }
     ],
     "indexes": []
   },
   "memo": {
-    "memos": []
+    "memos": [
+      {
+        "value": "회원 정보에 대한 업무\n\n* primary key = 중심테이블, 중요 테이블에서 만들어진 키\n\n* relationship = 중심테이블과 1:N으로 관계를 맺을 수 있으며, \n관계를 맺으면 primary key가 자동으로 전달됨.\n(primary key = 노란색, 다른 테이블 key= 분홍색)\n\n* NULL = 값이 존재하지 않음을 나타내는 특별한 값. NULL은 비어있는 상태를 나타내며, 값이 알 수 없거나 적용할 수 없는 경우에 사용. NULL은 데이터 타입에 상관없이 모든 열에 할당될 수 있음.\n\n* NOTNULL = 열에 NULL 값을 허용하지 않는 제약 조건. NOT NULL을 지정하면 해당 열에는 반드시 값이 있어야 함. 이는 데이터 무결성을 강제하고 데이터베이스의 일관성을 유지하는 데 도움이 됨. 즉, NOT NULL을 사용하면 열에 항상 유효한 값이 존재. \n\n* default는 date타입을 쓸때 쓴다.",
+        "ui": {
+          "active": true,
+          "left": 965,
+          "top": 290,
+          "zIndex": 360,
+          "width": 378,
+          "height": 304
+        },
+        "id": "cd94ae6a-ef5b-4490-b8c5-245064ef0572"
+      }
+    ]
   },
   "relationship": {
     "relationships": [
@@ -285,13 +407,39 @@
           "columnIds": [
             "644b9ea7-65b9-45fc-9358-9ec28a86cb0a"
           ],
-          "x": 282.19482421875,
-          "y": 522,
-          "direction": "top"
+          "x": 385,
+          "y": 429.25,
+          "direction": "left"
         },
         "constraintName": "fk_members_to_members_hobby",
         "visible": true,
         "id": "e511ed92-9a25-4ab1-a642-7cfff79380bb"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ec6fa917-4679-48bf-9113-85c6d7ef5816",
+          "columnIds": [
+            "0eaaae04-ef23-47e0-b444-6a6982b38d8e"
+          ],
+          "x": 452.34326171875,
+          "y": 187,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "b2f6c453-3294-4e03-b19d-44a282085ef9",
+          "columnIds": [
+            "7a4de3ac-7c40-4b89-9bbb-4ef8186a8d1e"
+          ],
+          "x": 657,
+          "y": 187.25,
+          "direction": "left"
+        },
+        "constraintName": "fk_members_to_membewrs-email",
+        "visible": true,
+        "id": "316e89e6-df1b-4343-b7f2-3145f6507103"
       }
     ]
   }
