@@ -4,7 +4,7 @@
 -- VALUES (value1, value2, value3, ...);
 
 
--- gender_code
+-- gender_code  성별 코드 생성
 INSERT INTO gender_code
 (GENDER, GENDER_CODE_ID)
 VALUES
@@ -15,7 +15,7 @@ INSERT INTO gender_code
 VALUES
 ('여', 'G-04');
 
--- address_code
+-- address_code 주소 코드 생성
 INSERT INTO address_code
 (ADDRESS,ADDRESS_CODE_ID)
 VALUES
@@ -25,7 +25,7 @@ VALUES
 ('대전시', 'A-04'),
 ('인천시', 'A-05');
 
--- members
+-- members 회원정보 입력
 INSERT INTO members
 (AGE,NAME,TELEPHONE,MEMBERS_ID,GENDER_CODE_ID,ADDRESS_CODE_ID)
 VALUES
@@ -35,7 +35,7 @@ VALUES
 (28, '이영미', '010-3333-4444', 'M-04', 'G-04', 'A-04'),
 (32, '정민호', '010-5555-6666', 'M-05', 'G-01', 'A-05');
 
--- members_hobby
+-- members_hobby 취미 코드 생성
 INSERT INTO members_hobby
 (HOBBY, HOBBY_CODE_ID)
 VALUES
@@ -49,7 +49,7 @@ VALUES
 ('사진촬영', 'H-08'),
 ('수영', 'H-09');
 
--- hobby_code
+-- hobby_code 취미코드와 회원코드 연결
 INSERT INTO hobby_code
 (MEMBERS_ID, HOBBY_CODE_ID)
 VALUES
@@ -63,3 +63,13 @@ VALUES
 ('M-04', 'H-08'),
 ('M-05', 'H-02'),
 ('M-05', 'H-09');
+
+-- membewrs_login 로그인 코드
+INSERT INTO membewrs_login
+(EMAIL,MEMBERS_ID, MEMBEWRS_LOGIN_ID)
+VALUES
+('hong@gmail.com', 'M-01', 'L-01'),
+('park.younghee@naver.com', 'M-02', 'L-02'),
+('kimchulsu@gmail.com', 'M-03', 'L-03'),
+('leeyoungmi@naver.com', 'M-04', 'L-04'),
+('jmh123@gmail.com', 'M-05', 'L-05');
