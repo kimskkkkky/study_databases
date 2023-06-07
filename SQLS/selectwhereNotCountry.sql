@@ -1,2 +1,2 @@
 SELECT * FROM Customers
-WHERE Country NOT LIKE 'Germany' and Country <> 'USA';
+WHERE Country NOT in ('Germany', 'USA');
