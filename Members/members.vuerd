@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -8,
-    "scrollLeft": -117,
-    "zoomLevel": 1,
+    "scrollTop": -230,
+    "scrollLeft": -144,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -189,7 +189,7 @@
           "active": false,
           "left": 625,
           "top": 365,
-          "zIndex": 57,
+          "zIndex": 5,
           "widthName": 67.72998046875,
           "widthComment": 60
         },
@@ -197,7 +197,7 @@
         "id": "ec6fa917-4679-48bf-9113-85c6d7ef5816"
       },
       {
-        "name": "MEMBERS_HOBBY",
+        "name": "HOBBY_CODE",
         "comment": "회원_취미",
         "columns": [
           {
@@ -251,8 +251,8 @@
           "active": false,
           "left": 626,
           "top": 607,
-          "zIndex": 61,
-          "widthName": 120.47265625,
+          "zIndex": 20,
+          "widthName": 92.3017578125,
           "widthComment": 61.22998046875,
           "color": "#007BFF"
         },
@@ -260,7 +260,7 @@
         "id": "11cc19b9-3813-4e93-aeb1-e43ae451a9eb"
       },
       {
-        "name": "MEMBEWRS_LOGIN",
+        "name": "MEMBERS_LOGIN",
         "comment": "회원_로그인",
         "columns": [
           {
@@ -310,7 +310,7 @@
             "id": "7a4de3ac-7c40-4b89-9bbb-4ef8186a8d1e"
           },
           {
-            "name": "MEMBEWRS_LOGIN_ID",
+            "name": "MEMBERS_LOGIN_ID",
             "comment": "회원_로그인 ID",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -325,7 +325,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 147.91357421875,
+              "widthName": 135.6435546875,
               "widthComment": 90.841796875,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -337,8 +337,8 @@
           "active": false,
           "left": 211,
           "top": 114,
-          "zIndex": 50,
-          "widthName": 127.68359375,
+          "zIndex": 27,
+          "widthName": 115.41357421875,
           "widthComment": 74.22998046875,
           "color": "#97FF00"
         },
@@ -346,7 +346,7 @@
         "id": "b2f6c453-3294-4e03-b19d-44a282085ef9"
       },
       {
-        "name": "HOBBY_CODE",
+        "name": "MEMBERS_HOBBY",
         "comment": "취미 코드",
         "columns": [
           {
@@ -400,8 +400,8 @@
           "active": false,
           "left": 61,
           "top": 474,
-          "zIndex": 51,
-          "widthName": 92.3017578125,
+          "zIndex": 21,
+          "widthName": 120.47265625,
           "widthComment": 60,
           "color": "#FFEB3B"
         },
@@ -463,7 +463,7 @@
           "active": false,
           "left": 990,
           "top": 97,
-          "zIndex": 23,
+          "zIndex": 2,
           "widthName": 102.4072265625,
           "widthComment": 60,
           "color": "#FF5722"
@@ -526,7 +526,7 @@
           "active": false,
           "left": 1145,
           "top": 625,
-          "zIndex": 63,
+          "zIndex": 7,
           "widthName": 109.63720703125,
           "widthComment": 60,
           "color": "#673AB7"
@@ -573,7 +573,7 @@
           "columnIds": [
             "7a4de3ac-7c40-4b89-9bbb-4ef8186a8d1e"
           ],
-          "x": 704.47412109375,
+          "x": 692.2041015625,
           "y": 179.25,
           "direction": "right"
         },
