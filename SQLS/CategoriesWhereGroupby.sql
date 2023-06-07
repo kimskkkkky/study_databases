@@ -5,9 +5,9 @@
 SELECT COUNT(*) AS CATN, OUT_CAT.CategoryName
 FROM (
 		SELECT CAT.*
-		FROM Categories AS CAT
+		FROM Categories AS CAT  -- Aliases 설정
 		WHERE CAT.CategoryName IN ('Produce','Beverages')
-) AS OUT_CAT
+) AS OUT_CAT  -- 가상 테이블 생성
 GROUP BY OUT_CAT.CategoryName;
 
 -- Result:
