@@ -1,5 +1,5 @@
 -- 링크 : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
--- 조건 : 
+-- 조건 : 제품명,가격, 주문 갯수, 고객명 표시
 
 SELECT  ProductName, Price, Quantity, CustomerName
 FROM ((OrderDetails AS ORDDT
