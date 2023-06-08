@@ -1,7 +1,7 @@
 -- 링크 : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns
 -- 조건 : Customers, Orders  Table JOIN  / CustomerName별로 주문 갯수 표시 / 연결 키는 각자 찾기
 
-SELECT COUNT(*), T_CUS.CustomerName
+SELECT COUNT(*) AS ORDER_COUNT , T_CUS.CustomerName
 FROM Customers AS T_CUS
 	INNER JOIN Orders AS T_ORD
     ON T_CUS.CustomerID = T_ORD.CustomerID  -- 연결키  = CustomerID
