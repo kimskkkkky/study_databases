@@ -8,7 +8,7 @@ FROM (SELECT COUNT(FirstName) AS ORDER_COUNT, LastName, FirstName  --직원 이�
        FROM Orders AS T_ORD
         INNER JOIN Employees AS T_EMP
        	ON T_ORD.EmployeeID = T_EMP.EmployeeID
-        GROUP BY FirstName);
+        GROUP BY EmployeeID);   -- FirstName이나 LastName 으로 그룹을 지으면 동명이인이 있을 수 있으니 주의
 
 -- Result:
 -- Number of Records: 1
